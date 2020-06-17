@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sinh viên"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/titleCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã số:"
+        android:textSize="20sp"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/txtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleCode"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Mã số"
+        android:inputType="numberSigned"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và tên:"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtCode"
+        android:layout_margin="3dp"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleName"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Họ và tên"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/titleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtName"
+        android:layout_margin="3dp"/>
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleDate"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Ngày sinh"
+        android:inputType="date"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/titleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtDate"
+        android:layout_margin="3dp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEmail"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/titleAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quê quán:"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_margin="3dp"/>
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quê quán"
+        android:textSize="25sp"
+        android:layout_below="@+id/titleAddress"
+        android:layout_margin="3dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_below="@+id/txtAddress"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_toRightOf="@+id/btnSave"
+        android:layout_below="@+id/txtAddress"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
